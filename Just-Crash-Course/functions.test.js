@@ -37,3 +37,19 @@ test('Return createUser', () => {
     lastName: 'Johns'
   });
 });
+
+test('Load to be under 900', () => {
+  const load1 = 400;
+  const load2 = 500;
+  expect(load1 + load2).toBeLessThanOrEqual(900);
+});
+
+//regExp /E/ for case sensitive
+test('There is no E in ship', () => {
+  expect('ship').not.toMatch(/E/);
+});
+
+test('Usernames to contain Admin', () => {
+   usernames = ['John', 'Mary', 'Admin'];
+  expect(usernames).toContain('Admin');
+});
