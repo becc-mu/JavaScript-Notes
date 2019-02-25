@@ -13,7 +13,7 @@ test('Adds 2 + 2 to NOT equal 3', () => {
 });
 
 
-
+// toBeNull
 test('Should be null', () => {
   expect(functions.isNull()).toBeNull();
 });
@@ -22,4 +22,18 @@ test('Should be null', () => {
 // toBeFalsy matches anything that an if statement treats as false
 test('Shoul be falsy', () => {
   expect(functions.checkValue(null)).toBeFalsy();
+});
+// toBeFalsy with 0 value same as null
+test('Shoul be falsy', () => {
+  expect(functions.checkValue(0)).toBeFalsy();
+});
+test('Shoul be falsy', () => {
+  expect(functions.checkValue(undefined)).toBeFalsy();
+});
+
+test('Return createUser', () => {
+  expect(functions.createUser()).toBe({
+    firstName: 'Hannha',
+    lastName: 'Johns'
+  });
 });
