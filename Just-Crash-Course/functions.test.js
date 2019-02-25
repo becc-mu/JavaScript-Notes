@@ -32,7 +32,7 @@ test('Shoul be falsy', () => {
 });
 
 test('Return createUser', () => {
-  expect(functions.createUser()).toBe({
+  expect(functions.createUser()).toEqual({
     firstName: 'Hannha',
     lastName: 'Johns'
   });
