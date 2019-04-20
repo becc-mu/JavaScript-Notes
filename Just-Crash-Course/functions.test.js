@@ -61,7 +61,7 @@ test('Usernames to contain Admin', () => {
 //     expect(data.name).toEqual('Leanne Graham');
 //   });
 
-//Async
+//Async await
 test('users fetched name should be Leanne Graham', async () => {
   expect.assertions(1);
   const data = await functions.fetchUser();
