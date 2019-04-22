@@ -1,0 +1,22 @@
+{
+  "name": "javascript-notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becc-mu/JavaScript-Notes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becc-mu/JavaScript-Notes/issues"
+  },
+  "homepage": "https://github.com/becc-mu/JavaScript-Notes#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
